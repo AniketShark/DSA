@@ -10,6 +10,7 @@ namespace DSAndAlgo
 			{ 
 				try
 				{
+					Console.Out.WriteLine(" Input Array ");
 					Console.WriteLine();
 					string[] array = Console.ReadLine().Split(',');
 					//long n = Convert.ToInt64(Console.ReadLine());
@@ -26,12 +27,11 @@ namespace DSAndAlgo
 					//	Console.Out.WriteLine($"Input array is bigger");
 					//	return;
 					//}
+					
 
-
-					//int[] arr = new int[array.Length];
-					//int i = 0;
-					//for (; i < array.Length; ++i)
-					//	arr[i] = Convert.ToInt32(array[i]);
+					int[] arr = new int[array.Length];
+					for (int i = 0; i < array.Length; ++i)
+						arr[i] = Convert.ToInt32(array[i]);
 
 					//Console.Out.WriteLine($"Element"); 
 					//int element = Convert.ToInt32(Console.In.ReadLine());
@@ -65,19 +65,19 @@ namespace DSAndAlgo
 					//	Console.Out.Write(arr[j] + ",");
 
 
-					int[,] multiArray = new int[4, 4] {
-						{1,2,3,4},
-						{5,6,7,8},
-						{9,10,11,12},
-						{13,14,15,16}
-					};
+					//int[,] multiArray = new int[4, 4] {
+					//	{1,2,3,4},
+					//	{5,6,7,8},
+					//	{9,10,11,12},
+					//	{13,14,15,16}
+					//};
 
-					for (int j = 0; j < multiArray.GetLength(0); j++)
-					{
-						Console.Out.WriteLine();
-						for (int k = 0; k < multiArray.GetLength(1); k++)
-							Console.Out.Write(" " + multiArray[j, k] + " ");
-					}
+					//for (int j = 0; j < multiArray.GetLength(0); j++)
+					//{
+					//	Console.Out.WriteLine();
+					//	for (int k = 0; k < multiArray.GetLength(1); k++)
+					//		Console.Out.Write(" " + multiArray[j, k] + " ");
+					//}
 					Console.Out.WriteLine();
 					//Console.Out.WriteLine($" snake pattern ");
 					//Console.Out.WriteLine($" Boundry Traversal ");
@@ -86,9 +86,12 @@ namespace DSAndAlgo
 					//ArrayAlgo.PrintBoundryOfMatrix(multiArray);
 					//ArrayAlgo.TransposeOfMatrix(multiArray);
 					//ArrayAlgo.RotateMatrixBy90UsingTranspose(multiArray);
-					ArrayAlgo.PrintMatrixInSpiralSequence(multiArray);
-
-
+					//ArrayAlgo.PrintMatrixInSpiralSequence(multiArray);
+					//Console.Out.WriteLine($"\n Number Of Distinct Elements : {HashSetProblems.CountOfDistinctObjectsInAnArray(arr)}");
+					//Console.Out.WriteLine(" Sum ");
+					//int sum = Convert.ToInt32(Console.In.ReadLine());
+					//HashSetProblems.FindAllPairsWithGivenSum(arr, sum);
+					HashSetProblems.FrequencyOfElement(arr);
 				}
 				catch (Exception e)
 				{
