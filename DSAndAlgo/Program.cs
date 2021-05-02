@@ -65,10 +65,11 @@ namespace DSAndAlgo
 					//	Console.Out.Write(arr[j] + ",");
 
 
-					int[,] multiArray = new int[3, 3] {
-						{10,20,30},
-						{40,50,60},
-						{70,80,90}
+					int[,] multiArray = new int[4, 4] {
+						{1,2,3,4},
+						{5,6,7,8},
+						{9,10,11,12},
+						{13,14,15,16}
 					};
 
 					for (int j = 0; j < multiArray.GetLength(0); j++)
@@ -80,12 +81,13 @@ namespace DSAndAlgo
 					Console.Out.WriteLine();
 					//Console.Out.WriteLine($" snake pattern ");
 					//Console.Out.WriteLine($" Boundry Traversal ");
-					
+
 					//ArrayAlgo.PrintMatrixInSnakePattern(multiArray);
 					//ArrayAlgo.PrintBoundryOfMatrix(multiArray);
 					//ArrayAlgo.TransposeOfMatrix(multiArray);
-					ArrayAlgo.RotateMatrixBy90UsingTranspose(multiArray);
-					
+					//ArrayAlgo.RotateMatrixBy90UsingTranspose(multiArray);
+					ArrayAlgo.PrintMatrixInSpiralSequence(multiArray);
+
 
 				}
 				catch (Exception e)

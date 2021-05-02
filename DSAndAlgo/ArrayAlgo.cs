@@ -313,5 +313,30 @@ namespace DSAndAlgo
 			return true;
 		}
 
+		public static bool PrintMatrixInSpiralSequence(int[,] arr)
+		{
+			int top  = 0;
+			int left = 0;
+			int bottom = arr.GetLength(0) - 1;
+			int right  = arr.GetLength(1) - 1;
+
+			while(bottom > top && right > left)
+			{
+				for (int i = left; i <= right; i++)
+					Console.Out.Write(" " + arr[top, i] + " ");
+				top++;
+				for(int j = top; j <= bottom; j++)
+					Console.Out.Write(" " + arr[j, right] + " ");
+				right--;
+				for (int i = right; i >= left; i--)
+					Console.Out.Write(" " + arr[bottom, i] + " ");
+				bottom--;
+				for (int j = bottom; j >= top; j--)
+					Console.Out.Write(" " + arr[j, left] + " ");
+				left++;
+			}
+
+			return true;
+		}
 	} 
 }
