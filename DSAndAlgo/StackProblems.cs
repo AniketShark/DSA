@@ -4,9 +4,8 @@ using System.Text;
 
 namespace DSAndAlgo
 {
-	public class BasicLinkedList
+	public class StackProblems
 	{
-
-
+		
 	}
 }

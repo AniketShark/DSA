@@ -4,9 +4,8 @@ using System.Text;
 
 namespace DSAndAlgo
 {
-	public class QueueProblems
+	public class BSTProblems
 	{
-		
 
 	}
 }

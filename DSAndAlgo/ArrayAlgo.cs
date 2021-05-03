@@ -207,7 +207,7 @@ namespace DSAndAlgo
 				count = 0;
 				column = column >= columns ? (columns - 1) : (column < 0) ? 0 : column;
 				//Console.Out.WriteLine(); 
-				while (count < arr.GetLength(1))
+				while (count < columns)
 				{
 					Console.Out.Write(" " + arr[row, column] + " "); 
 					column = column + increament;
