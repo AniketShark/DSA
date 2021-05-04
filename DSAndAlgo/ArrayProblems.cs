@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DSAndAlgo
 {
-	public class ArrayAlgo
+	public class ArrayProblems
 	{
 		public static int[] LeftShiftWithMemoryOn(int[] arr, int n, int d)
 		{
